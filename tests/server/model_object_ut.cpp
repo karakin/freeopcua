@@ -31,7 +31,7 @@
 #include "services_registry_test.h"
 #include "standard_namespace_test.h"
 
-#include <gmock/gmock.h>
+
 #include <gtest/gtest.h>
 
 using namespace testing;
@@ -260,7 +260,7 @@ OpcUa::RelativePathElement GetHierarchicalElement(const std::string & browseName
 TEST_F(ModelObject, CanAccessVariableByBrowsePath)
 {
   OpcUa::Model::Server server(Services);
-  OpcUa::Model::Object serverObject = server.GetObject(OpcUa::ObjectId::Server);
+  OpcUa::Model::Object serverObject = server.ServerGetObject(OpcUa::ObjectId::Server);
   OpcUa::RelativePath path;
   path.Elements.push_back(GetHierarchicalElement(OpcUa::Names::ServerStatus));
   path.Elements.push_back(GetHierarchicalElement(OpcUa::Names::BuildInfo));

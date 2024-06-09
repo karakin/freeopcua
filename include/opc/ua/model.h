@@ -236,7 +236,7 @@ public:
   Server(Services::SharedPtr services);
 
   Object RootObject() const;
-  Object GetObject(const NodeId & id) const;
+  Object ServerGetObject(const NodeId & id) const;
   ObjectType GetObjectType(const NodeId & typeId) const;
 
 public:

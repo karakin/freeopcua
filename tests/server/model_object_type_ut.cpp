@@ -31,7 +31,7 @@
 #include "services_registry_test.h"
 #include "standard_namespace_test.h"
 
-#include <gmock/gmock.h>
+
 #include <gtest/gtest.h>
 
 using namespace testing;

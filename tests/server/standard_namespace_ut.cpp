@@ -16,7 +16,7 @@
 #include <opc/ua/server/standard_address_space.h>
 
 #include <functional>
-#include <gmock/gmock.h>
+
 #include <gtest/gtest.h>
 
 using namespace testing;

@@ -15,7 +15,7 @@
 #include <opc/common/logger.h>
 #include <opc/ua/protocol/session.h>
 #include <opc/ua/server/endpoints_services.h>
-#include <gmock/gmock.h>
+
 #include <gtest/gtest.h>
 
 

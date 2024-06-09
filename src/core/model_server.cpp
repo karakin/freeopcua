@@ -33,7 +33,7 @@ Object Server::RootObject() const
   return Object(ObjectId::RootFolder, Connection);
 }
 
-Object Server::GetObject(const NodeId & id) const
+Object Server::ServerGetObject(const NodeId & id) const
 {
   return Object(id, Connection);
 }

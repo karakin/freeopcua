@@ -102,7 +102,7 @@ ServerObject::~ServerObject()
 Model::Object ServerObject::CreateServerObject(const Services::SharedPtr & services) const
 {
   Model::Server server(services);
-  Model::Object serverObject = server.GetObject(ObjectId::Server);
+  Model::Object serverObject = server.ServerGetObject(ObjectId::Server);
   return serverObject;
 }
 

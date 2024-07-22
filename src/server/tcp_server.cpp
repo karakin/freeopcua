@@ -179,7 +179,9 @@ public:
       {
         LOG_INFO(Logger, "shutting down opc ua binary server");
         Stopped = true;
+#if defined(WINDOWS)
         shutdown(Socket, SD_BOTH);
+#endif
         ServerThread->Join();
         ServerThread.reset();
       }
